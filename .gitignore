@@ -199,6 +199,8 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
+yarn.lock
+
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,node,yarn,visualstudiocode
 
 tests/**/*
