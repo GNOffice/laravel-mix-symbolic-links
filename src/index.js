@@ -6,7 +6,7 @@ const resolve = require("path").resolve
 
 
 class SymbolicFolder {
-    register(path, target) {
+    register(target, path) {
 		
 		target = resolve(target)
         
@@ -42,7 +42,7 @@ class SymbolicFolder {
 //NOP
 
 class SymbolicFile {
-    register(path, target) {
+    register(target, path) {
 		
 		target = resolve(target)
         
