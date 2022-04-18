@@ -104,4 +104,4 @@ class UnlinkSymbolicLink {
 
 mix.extend('createSymbolicFolder', new SymbolicFolder())
 mix.extend('createSymbolicFile', new SymbolicFile())
-mix.extend('unlinkSymbolicFile', new UnlinkSymbolicLink())
+mix.extend('unlinkSymbolicLink', new UnlinkSymbolicLink())
