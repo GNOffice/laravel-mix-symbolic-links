@@ -24,6 +24,6 @@
     "is-symbolic-link": "^2.0.3"
   },
   "devDependencies": {
-    "laravel-mix": "^6.0.31"
+    "laravel-mix": "^5.0.1"
   }
 }
