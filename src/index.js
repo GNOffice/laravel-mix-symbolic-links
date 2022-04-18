@@ -84,6 +84,7 @@ class SymbolicFile {
 
 class UnlinkSymbolicLink {
   register (path) {
+    path = resolve(path)
 
     // check path is symbolic link
     if (isSymbolicLink.sync(path)) {
