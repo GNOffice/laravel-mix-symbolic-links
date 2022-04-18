@@ -87,17 +87,15 @@ class UnlinkSymbolicLink {
 
     // check path is symbolic link
     if (isSymbolicLink.sync(path)) {
-
-      fs.unlink(path, (err) => {
-        if (err) throw err
+      try {
+        fs.unlinkSync(path)
+        console.log(`> Symbolic link at '${path}' deleted successfully`.bold.green)
+      } catch (err) {
         //Error
-        console.log(
-          `> The symbolic link at '${path}' failed to be deleted correctly \n\n ${err}`.bold.red)
-      })
-
+        console.log(`> The symbolic link at '${path}' failed to be deleted correctly \n\n ${err}`.bold.red)
+      }
     } else {
       console.log(`> '${path}' is not symbolic link`.bold.red)
-
     }
   }
 }
